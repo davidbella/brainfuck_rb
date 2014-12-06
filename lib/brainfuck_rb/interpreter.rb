@@ -74,6 +74,7 @@ class Interpreter
   end
 
   def input
+    array[@data_pointer] = 0 # WRITE A TEST FOR ME, THIS BROKE
     STDIN.gets.chomp.ord.times { increment }
   end
 
